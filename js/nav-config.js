@@ -25,7 +25,7 @@ const navigationConfig = {
             ]
         },
         { title: 'About', path: 'about.html', available: true },
-        { title: 'Careers', path: 'careers.html', available: false },
+        { title: 'Careers', path: 'careers.html', available: true },
         { title: 'Contact', path: 'contact.html', available: true, class: 'cta' }
     ]
 };
