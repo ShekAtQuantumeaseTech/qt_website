@@ -1,23 +1,137 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
-  <meta charset='UTF-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <title>QuantumEase | Services</title>
-  <link rel='stylesheet' href='css/base.css'>
-  <link rel='stylesheet' href='css/layout.css'>
-  <link rel='stylesheet' href='css/pages/services.css'>
-  <script src="js/include.js"></script>
-  <script src="js/nav-config.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="static/images/favicon.svg">
+    <link rel="alternate icon" href="static/images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | QuantumEase Technologies</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages/services.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 </head>
 <body>
   <header class="main-header">
     <div data-include="partials/header.html"></div>
   </header>
-  <main>
-    <h1>Our Services</h1>
-    <p>From hardware prototyping to AI deployment and cybersecurity integration, we deliver full-cycle solutions.</p>
-  </main>
-  <footer>Footer Placeholder</footer>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <video class="hero-video" autoplay muted loop playsinline preload="auto">
+            <source src="static/videos/hero-bg.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Quantum Innovation Services</h1>
+            <p class="hero-description">From concept to deployment, we transform complex challenges into intelligent solutions.</p>
+        </div>
+        <!-- Scroll indicator will be added by hero.js -->
+    </section>
+
+    <!-- Main Services Grid -->
+    <section class="services-container">
+        <div class="services-grid">
+            <div class="service-card" data-service="embedded">
+            <div class="service-icon">⚡</div>
+            <h3>Embedded System Design</h3>
+            <p>Custom hardware solutions optimized for edge AI and real-time processing.</p>
+            <ul class="service-features">
+                <li>FPGA Development</li>
+                <li>Microcontroller Programming</li>
+                <li>Hardware Acceleration</li>
+                <li>Power Optimization</li>
+            </ul>
+        </div>
+
+        <div class="service-card" data-service="ai">
+            <div class="service-icon">🧠</div>
+            <h3>AI Model Optimization</h3>
+            <p>Transform complex AI models into efficient, deployable solutions.</p>
+            <ul class="service-features">
+                <li>Model Compression</li>
+                <li>Edge AI Optimization</li>
+                <li>Performance Tuning</li>
+                <li>Custom Architecture Design</li>
+            </ul>
+        </div>
+
+        <div class="service-card" data-service="cloud">
+            <div class="service-icon">☁️</div>
+            <h3>Cloud Integration</h3>
+            <p>Seamless connection between edge devices and cloud infrastructure.</p>
+            <ul class="service-features">
+                <li>Hybrid Architecture</li>
+                <li>Real-time Sync</li>
+                <li>Scalable Solutions</li>
+                <li>Data Pipeline Design</li>
+            </ul>
+        </div>
+
+        <div class="service-card" data-service="security">
+            <div class="service-icon">🔒</div>
+            <h3>Cybersecurity Solutions</h3>
+            <p>Defence-grade security for AI systems and IoT networks.</p>
+            <ul class="service-features">
+                <li>Threat Detection</li>
+                <li>Secure Communication</li>
+                <li>Encryption Implementation</li>
+                <li>Security Auditing</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="service-process">
+        <h2>Our Development Process</h2>
+        <div class="process-steps">
+            <div class="step">
+                <span class="step-number">01</span>
+                <h4>Consultation</h4>
+                <p>Deep dive into your requirements and challenges</p>
+            </div>
+            <div class="step">
+                <span class="step-number">02</span>
+                <h4>Design</h4>
+                <p>Create detailed solution architecture</p>
+            </div>
+            <div class="step">
+                <span class="step-number">03</span>
+                <h4>Development</h4>
+                <p>Agile implementation with regular updates</p>
+            </div>
+            <div class="step">
+                <span class="step-number">04</span>
+                <h4>Deployment</h4>
+                <p>Smooth transition to production</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="services-cta">
+        <div class="cta-content">
+            <h2>Ready to Transform Your Ideas?</h2>
+            <p>Let's discuss how our services can accelerate your innovation.</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn primary">Start a Project</a>
+                <a href="about.html" class="btn secondary">Learn About Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div data-include="partials/footer.html"></div>
+    </footer>
+
+    <script src="js/include.js"></script>
+    <script src="js/nav-config.js"></script>
+    <script src="js/hero.js"></script>
+    <script src="js/services.js" defer></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>
