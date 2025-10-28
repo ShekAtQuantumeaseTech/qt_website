@@ -1,23 +1,140 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
-  <meta charset='UTF-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <title>QuantumEase | Products</title>
-  <link rel='stylesheet' href='css/base.css'>
-  <link rel='stylesheet' href='css/layout.css'>
-  <link rel='stylesheet' href='css/pages/products.css'>
-  <script src="js/include.js"></script>
-  <script src="js/nav-config.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="static/images/favicon.svg">
+    <link rel="alternate icon" href="static/images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | QuantumEase Technologies</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages/products.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 </head>
 <body>
-  <header class="main-header">
-    <div data-include="partials/header.html"></div>
-  </header>
-  <main>
-    <h1>Our Products</h1>
-    <p>Explore our edge AI, robotics, and smart surveillance solutions.</p>
-  </main>
-  <footer>Footer Placeholder</footer>
+    <!-- Header -->
+    <header class="site-header">
+        <div data-include="partials/header.html"></div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <video class="hero-video" autoplay muted loop playsinline preload="auto">
+            <source src="static/videos/hero-bg.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Quantum Innovation Products</h1>
+            <p class="hero-description">Advanced solutions engineered for next-generation intelligence and automation.</p>
+        </div>
+        <!-- Scroll indicator will be added by hero.js -->
+    </section>
+
+    <!-- Main Products Grid -->
+    <section class="services-container">
+        <div class="services-grid">
+            <div class="service-card" data-product="quantum-ai">
+                <div class="service-icon">🧠</div>
+                <h3>QuantumAI Platform</h3>
+                <p>Advanced AI system optimized for real-time processing and decision making.</p>
+                <ul class="service-features">
+                    <li>Neural Network Optimization</li>
+                    <li>Real-time Processing</li>
+                    <li>Edge AI Integration</li>
+                    <li>Scalable Architecture</li>
+                </ul>
+            </div>
+
+            <div class="service-card" data-product="robotics">
+                <div class="service-icon">🤖</div>
+                <h3>AutoBot Series</h3>
+                <p>Intelligent robotic systems for industrial automation and defense.</p>
+                <ul class="service-features">
+                    <li>Autonomous Navigation</li>
+                    <li>Multi-sensor Fusion</li>
+                    <li>Path Planning</li>
+                    <li>Real-time Adaptation</li>
+                </ul>
+            </div>
+
+            <div class="service-card" data-product="edge">
+                <div class="service-icon">⚡</div>
+                <h3>EdgeCore Computing</h3>
+                <p>High-performance edge computing for mission-critical applications.</p>
+                <ul class="service-features">
+                    <li>Low Latency Processing</li>
+                    <li>Secure Deployment</li>
+                    <li>Hardware Acceleration</li>
+                    <li>Real-time Analytics</li>
+                </ul>
+            </div>
+
+            <div class="service-card" data-product="defense">
+                <div class="service-icon">�️</div>
+                <h3>Defense Systems</h3>
+                <p>Advanced defense solutions with integrated AI capabilities.</p>
+                <ul class="service-features">
+                    <li>Threat Detection</li>
+                    <li>Secure Communication</li>
+                    <li>Automated Response</li>
+                    <li>Strategic Analysis</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+        </div>
+    </section>
+
+    <!-- Product Specs Section -->
+    <section class="product-process">
+        <h2>Product Specifications</h2>
+        <div class="spec-steps">
+            <div class="spec">
+                <div class="spec-icon">⚡</div>
+                <h4>Performance</h4>
+                <p>High-throughput processing with minimal latency</p>
+            </div>
+            <div class="spec">
+                <div class="spec-icon">🛡️</div>
+                <h4>Security</h4>
+                <p>Military-grade encryption and protection</p>
+            </div>
+            <div class="spec">
+                <div class="spec-icon">📊</div>
+                <h4>Scalability</h4>
+                <p>Flexible deployment from edge to cloud</p>
+            </div>
+            <div class="spec">
+                <div class="spec-icon">🔄</div>
+                <h4>Integration</h4>
+                <p>Seamless compatibility with existing systems</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="products-cta">
+        <div class="cta-content">
+            <h2>Ready to Enhance Your Capabilities?</h2>
+            <p>Let's discuss how our products can transform your operations.</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn primary">Schedule Demo</a>
+                <a href="services.html" class="btn secondary">View Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div data-include="partials/footer.html"></div>
+    </footer>
+
+    <script src="js/include.js"></script>
+    <script src="js/nav-config.js"></script>
+    <script src="js/products.js" defer></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>
