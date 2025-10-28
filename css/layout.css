@@ -1,0 +1,25 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+@media(max-width:768px){
+  .container { padding: 10px; }
+}
+
+@media (max-width: 600px) {
+  h1, h2 {
+    letter-spacing: 0.6px;
+    font-size: clamp(1.2rem, 4vw, 1.8rem);
+  }
+
+  p, a, button {
+    letter-spacing: 0.4px;
+    font-size: 0.9rem;
+  }
+
+  .company-name h1 {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+}

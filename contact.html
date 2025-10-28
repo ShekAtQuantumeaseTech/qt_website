@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | QuantumEase Technologies Pvt. Ltd.</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/pages/contact.css" />
+    <script src="js/include.js" defer></script>
+    <script src="js/contact.js" defer></script>
+  </head>
+
+  <body>
+    <div data-include="partials/header.html"></div>
+
+    <!-- ===========================
+         Section 1: Core Team
+    ============================ -->
+    <section class="team-section">
+      <h2>Meet the Core Team</h2>
+      <div class="team-grid">
+        <div class="team-card">
+          <img src="static/images/team/ceo1.jpeg" alt="CEO" />
+          <h3>Baid Prakash Sah</h3>
+          <p class="title">Founder, CEO</p>
+          <p class="desc">
+            Baid leads QuantumEase with a vision to build next-gen AI and robotics systems
+            for defense and industrial automation.
+          </p>
+        </div>
+
+        <div class="team-card">
+          <img src="static/images/team/ceo2.jpg" alt="CEO" />
+          <h3>Shubham Shekhar</h3>
+          <p class="title">Founder, CEO & Product Strategist</p>
+          <p class="desc">
+            Shubham ensures every QuantumEase solution bridges innovation with execution, driving
+            efficient operations and global strategy.
+          </p>
+        </div>
+
+        <div class="team-card">
+          <img src="static/images/team/ceo3.jpeg" alt="Director" />
+          <h3>Akash Singh Rathod</h3>
+          <p class="title">Director & Lead Engineer</p>
+          <p class="desc">
+            Akash heads AI engineering, specializing in real-time autonomous systems and
+            quantum-driven optimization.
+          </p>
+        </div>
+      </div>
+      </div> <!-- end of .team-grid -->
+      <div class="scroll-btn-container">
+        <button id="scroll-to-contact" class="btn secondary">Get In Touch</button>
+      </div>
+    </section>
+
+    <!-- ===========================
+         Section 2: Enquiry Form
+    ============================ -->
+    <section class="contact-section">
+      <div class="contact-wrapper">
+        <div class="contact-header">
+          <h2>Get In Touch</h2>
+          <p>Let’s collaborate and build something exceptional together.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- LEFT: FORM -->
+          <div class="contact-left">
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="Your Full Name" required />
+              </div>
+              <div class="form-group">
+                <input type="text" id="company" name="company" placeholder="Company Name" required />
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Email Address" required />
+              </div>
+              <div class="form-group">
+                <input type="tel" id="phone" name="phone" placeholder="Contact Number" required />
+              </div>
+              <div class="form-group">
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn primary">Send Message</button>
+            </form>
+          </div>
+
+          <!-- RIGHT: INFO -->
+          <div class="contact-right">
+            <div class="info-header">
+              <h3>Contact Information</h3>
+              <p>Reach us directly at our headquarters.</p>
+            </div>
+
+            <div class="info-list">
+              <div class="info-item">
+                <i class="icon">📍</i>
+                <span>Tower B, Sector 132, Noida, UP – 201301</span>
+              </div>
+
+              <div class="info-item">
+                <i class="icon">✉️</i>
+                <a href="mailto:info@quantumease.ai">info@quantumease.ai</a>
+              </div>
+
+              <div class="info-item">
+                <i class="icon">📞</i>
+                <a href="tel:+919876543210">+91 98765 43210</a>
+              </div>
+
+              <div class="info-item">
+                <i class="icon">⏰</i>
+                <span>Mon–Fri: 9 AM – 6 PM</span>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="#">LinkedIn</a>
+              <a href="#">Twitter</a>
+              <a href="#">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal">
+      <div class="modal-content">
+        <h3>Thank You!</h3>
+        <p>Our team will reach out to you shortly.</p>
+        <button id="close-modal" class="btn secondary">Close</button>
+      </div>
+    </div>
+
+    <div data-include="partials/footer.html"></div>
+  </body>
+</html>

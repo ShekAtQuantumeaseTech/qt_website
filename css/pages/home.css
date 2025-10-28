@@ -1,0 +1,126 @@
+/* Hero Section Styling */
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  text-align: center;
+}
+
+/* Background Video */
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Overlay for readability */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0,0,0,0.5), rgba(10,10,20,0.85));
+  z-index: 1;
+}
+
+/* Hero Content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 32px;
+}
+
+#changing-text {
+  color: var(--primary);
+  border-right: 3px solid var(--primary);
+  padding-right: 8px;
+  animation: blink 1s step-end infinite;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn.primary {
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  color: #031227;
+  font-weight: 700;
+}
+
+.btn.secondary {
+  border: 2px solid var(--primary);
+  background: transparent;
+  color: var(--text);
+}
+
+.btn.secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 1.9rem;
+  }
+  .cta-buttons {
+    flex-direction: column;
+  }
+}
+
+/* Light / Dark Theme Support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #071027;
+    --text: #e9f2ff;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f7f9fc;
+    --text: #111;
+  }
+  .hero-overlay {
+    background: linear-gradient(180deg, rgba(255,255,255,0.5), rgba(255,255,255,0.9));
+  }
+}
+
+.hero {
+  background: radial-gradient(circle at center, #0e162e, #050a1a);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 4vw + 1rem, 5rem);
+  letter-spacing: 1px;
+}
+.hero p {
+  font-size: clamp(1rem, 1vw + 0.4rem, 1.4rem);
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="static/images/favicon.svg">
+  <link rel="alternate icon" href="static/images/favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuantumEase | AI. Robotics. Defence.</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/home.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div data-include="partials/header.html"></div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <video class="hero-video" autoplay muted loop playsinline preload="auto">
+      <source src="static/videos/hero-bg.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="we-do">WE DO</span><br>
+        <span id="changing-text"></span>
+      </h1>
+      <div class="cta-buttons">
+        <a href="products.html" class="btn primary">Explore Products & Services</a>
+        <a href="contact.html" class="btn secondary">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div data-include="partials/footer.html"></div>
+  </footer>
+
+  <script src="js/include.js" defer></script>
+  <script src="js/main.js" defer></script>
+
+</body>
+</html>

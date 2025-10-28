@@ -1,0 +1,217 @@
+/* ===========================
+   ABOUT PAGE (QUANTUMEASE STYLE)
+=========================== */
+
+body {
+  background: radial-gradient(circle at top, #070c1a, #030711 80%);
+  color: var(--text);
+  font-family: 'Orbitron', sans-serif;
+  overflow-x: hidden;
+}
+
+/* ---------- HERO ---------- */
+.about-hero {
+  background: url('../static/media/bg-tech-pattern.webp') center/cover no-repeat,
+              linear-gradient(180deg, rgba(10,15,30,0.85), rgba(5,10,25,1));
+  text-align: center;
+  padding: 160px 20px 140px;
+  position: relative;
+}
+
+.about-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-hero h1 {
+  font-size: clamp(2rem, 3vw + 1rem, 3.4rem);
+  color: var(--primary);
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  text-shadow: 0 0 12px rgba(0, 212, 255, 0.3);
+}
+
+.about-hero p {
+  font-size: clamp(1rem, 1vw + 0.4rem, 1.3rem);
+  color: #c8d3e8;
+  line-height: 1.6;
+}
+
+.about-hero .highlight {
+  color: var(--secondary);
+}
+
+/* ---------- MISSION / VISION / VALUES ---------- */
+.about-pillars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  padding: 100px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.pillar {
+  flex: 1 1 300px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 32px 28px;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 14px rgba(0, 212, 255, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pillar:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 22px rgba(0, 212, 255, 0.2);
+}
+
+.pillar h3 {
+  color: var(--primary);
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+}
+
+.pillar p {
+  color: #c7d3e0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* ---------- JOURNEY ---------- */
+.about-journey {
+  text-align: center;
+  padding: 80px 20px;
+  background: rgba(255,255,255,0.02);
+}
+
+.about-journey h2 {
+  color: var(--primary);
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+}
+
+.timeline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.milestone {
+  flex: 1 1 200px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #d3e2f2;
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease;
+}
+
+.milestone span {
+  color: var(--secondary);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.milestone:hover {
+  transform: translateY(-3px);
+}
+
+/* ---------- EXPERTISE ---------- */
+.about-domains {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.about-domains h2 {
+  color: var(--primary);
+  margin-bottom: 40px;
+}
+
+.domain-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.domain-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 20px;
+  color: #cbd6e3;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.domain-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 18px rgba(0, 212, 255, 0.2);
+  color: var(--primary);
+}
+
+/* ---------- QUOTE ---------- */
+.about-quote {
+  padding: 80px 20px;
+  text-align: center;
+  background: rgba(255,255,255,0.02);
+}
+
+.about-quote blockquote {
+  font-size: 1.2rem;
+  color: #d3e2f2;
+  max-width: 700px;
+  margin: 0 auto 16px;
+  line-height: 1.6;
+}
+
+.quote-author {
+  color: var(--secondary);
+  font-size: 0.9rem;
+}
+
+/* ---------- CTA ---------- */
+.about-cta {
+  text-align: center;
+  padding: 100px 20px;
+  background: radial-gradient(circle at center, rgba(10,15,35,1), rgba(5,10,25,1));
+}
+
+.about-cta h2 {
+  font-size: 1.6rem;
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+.about-cta p {
+  color: #c8d3e8;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .about-pillars, .timeline { flex-direction: column; align-items: center; }
+  .about-hero h1 { font-size: 2rem; }
+}

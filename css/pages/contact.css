@@ -1,0 +1,315 @@
+/* ===========================
+   CONTACT PAGE STYLES (FINAL CLEAN)
+=========================== */
+
+body {
+  background: radial-gradient(circle at top, #0a1226, #050a1b 80%);
+  color: var(--text);
+  font-family: 'Orbitron', sans-serif;
+  overflow-x: hidden;
+}
+
+/* ---------- TEAM SECTION ---------- */
+.team-section {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.team-section h2 {
+  font-size: 2.2rem;
+  color: var(--primary);
+  margin-bottom: 40px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}
+
+.team-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 18px rgba(0, 212, 255, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 320px;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 24px rgba(0, 212, 255, 0.2);
+}
+
+.team-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.team-card h3 {
+  color: var(--text);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.team-card .title {
+  color: var(--primary);
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.team-card .desc {
+  font-size: 0.85rem;
+  color: #c7d3e0;
+  line-height: 1.5;
+}
+
+/* ---------- SCROLL BUTTON (TO CONTACT) ---------- */
+.scroll-btn-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.scroll-btn-container .btn {
+  padding: 12px 28px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #00d4ff, #7c3cff);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: pulseGlow 2.5s infinite ease-in-out;
+}
+
+.scroll-btn-container .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 18px rgba(0, 212, 255, 0.4);
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 10px rgba(0, 212, 255, 0.2); }
+  50% { box-shadow: 0 0 20px rgba(124, 60, 255, 0.5); }
+}
+
+/* ===========================
+   CONTACT SECTION (FINAL PRO DESIGN)
+=========================== */
+.contact-section {
+  background: radial-gradient(circle at center, rgba(15, 20, 35, 0.9) 0%, rgba(5, 10, 25, 1) 80%);
+  padding: 100px 20px;
+  color: var(--text);
+}
+
+.contact-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-header h2 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.contact-header p {
+  color: #b0bdd1;
+  font-size: 0.95rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  gap: 40px;
+  align-items: start;
+}
+
+/* ---------- LEFT FORM ---------- */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 40px 32px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 30px rgba(0, 212, 255, 0.05);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  font-size: 0.95rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 12px rgba(0, 212, 255, 0.25);
+  outline: none;
+}
+
+.contact-form .btn.primary {
+  align-self: center;
+  margin-top: 12px;
+  padding: 14px 28px;
+  font-weight: 600;
+}
+
+/* ---------- RIGHT INFO PANEL ---------- */
+.contact-right {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 36px 26px;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.08);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.contact-right::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  box-shadow: 0 0 12px rgba(0, 212, 255, 0.5);
+}
+
+.contact-right:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 24px rgba(0, 212, 255, 0.18);
+}
+
+.info-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.info-header h3 {
+  color: var(--primary);
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.info-header p {
+  color: #a9b5c6;
+  font-size: 0.85rem;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #cbd6e3;
+  font-size: 0.9rem;
+}
+
+.icon {
+  color: var(--primary);
+  font-size: 1.1rem;
+}
+
+.info-item a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.info-item a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 12px;
+}
+
+.social-links a {
+  color: var(--primary);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--secondary);
+}
+
+/* ---------- Success Modal Styles */
+.modal {
+  display: none; /* hidden by default */
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.modal-content {
+  background: rgba(10,12,20,0.98);
+  border-radius: 12px;
+  padding: 26px;
+  max-width: 420px;
+  width: calc(100% - 40px);
+  text-align: center;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+  color: var(--text);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-right {
+    margin-top: 20px;
+  }
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 1px;
+}
+
+h1 { font-size: var(--fs-xxl); }
+h2 { font-size: var(--fs-xl); }
+h3 { font-size: var(--fs-lg); }
+p, a, li, span { font-size: var(--fs-base); }
+small { font-size: var(--fs-sm); }

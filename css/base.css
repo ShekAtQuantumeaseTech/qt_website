@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary: #00d4ff;
+  --secondary: #7c3cff;
+  --bg: #071027;
+  --text: #e9f2ff;
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+p, a, button, input, textarea {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.nav-links a {
+  font-size: var(--fs-sm);
+  padding: var(--space-xs) var(--space-sm);
+}
+
+.btn {
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--fs-base);
+}
