@@ -1,3 +1,141 @@
+/* About page styles — consistent with contact page (fonts, grid, dark radial background) */
+/* Keep this file focused only on about page sections: hero, pillars, timeline, domains, quote, CTA */
+
+body {
+  background: radial-gradient(circle at top, #0a1226, #050a1b 80%);
+  color: var(--text);
+  font-family: 'Orbitron', sans-serif;
+  overflow-x: hidden;
+}
+
+.about-hero {
+  padding: 100px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(10,12,20,0.6), rgba(5,8,15,0.85));
+}
+
+.about-hero .about-hero-content {
+  max-width: 900px;
+}
+
+.about-hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 14px;
+  color: var(--primary);
+}
+
+.about-hero p {
+  color: #cbd6e3;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Pillars */
+.about-pillars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.about-pillars .pillar {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 12px;
+  padding: 22px;
+  text-align: left;
+  backdrop-filter: blur(8px);
+}
+
+.about-pillars h3 { color: var(--primary); margin-bottom: 8px; }
+.about-pillars p { color: #b9c6d6; line-height: 1.5; }
+
+/* Journey / Timeline */
+.about-journey {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px 40px 20px;
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
+.milestone {
+  background: rgba(255,255,255,0.03);
+  border-radius: 10px;
+  padding: 16px;
+  color: #cbd6e3;
+  border-left: 3px solid rgba(0,212,255,0.06);
+  transform: translateY(12px);
+  opacity: 0;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.milestone.visible { transform: translateY(0); opacity: 1; }
+
+.milestone span {
+  display: block;
+  color: var(--primary);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+/* Domains grid */
+.about-domains {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px 40px 20px;
+}
+
+.domain-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.domain-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 18px;
+  border-radius: 10px;
+  text-align: center;
+  color: #cbd6e3;
+  font-weight: 600;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.domain-card:hover { transform: translateY(-6px); box-shadow: 0 12px 36px rgba(0,212,255,0.06); }
+
+/* Quote */
+.about-quote { text-align: center; margin: 36px 20px; }
+.about-quote blockquote { color: #dceafe; font-size: 1.1rem; font-style: italic; }
+.quote-author { color: #9fb3cc; margin-top: 8px; }
+
+/* CTA */
+.about-cta { text-align: center; margin: 30px 20px 80px 20px; }
+.about-cta .btn.primary { padding: 12px 28px; font-weight: 700; border-radius: 10px; }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-hero h1 { font-size: 1.9rem; }
+  .timeline { grid-template-columns: 1fr; }
+}
+
+/* Headings reuse */
+h1, h2, h3, h4 { font-family: 'Orbitron', sans-serif; letter-spacing: 1px; }
+h1 { font-size: var(--fs-xxl); }
+h2 { font-size: var(--fs-xl); }
+h3 { font-size: var(--fs-lg); }
+p, a, li, span { font-size: var(--fs-base); }
 /* ===========================
    ABOUT PAGE (QUANTUMEASE STYLE)
 =========================== */

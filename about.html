@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="static/images/favicon.svg">
+  <link rel="alternate icon" href="static/images/favicon.ico">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | QuantumEase Technologies Pvt. Ltd.</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/about.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <!-- Header -->
-  <div data-include="partials/header.html"></div>
+  <header class="main-header">
+    <div data-include="partials/header.html"></div>
+  </header>
 
   <!-- HERO -->
   <section class="about-hero">
@@ -77,8 +87,12 @@
   </section>
 
   <!-- Footer -->
-  <div data-include="partials/footer.html"></div>
+  <footer class="main-footer">
+    <div data-include="partials/footer.html"></div>
+  </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/include.js" defer></script>
+  <script src="js/about.js" defer></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
