@@ -14,6 +14,3 @@ Starter structure for QuantumEase website.
 - Once install and running it will start to show up in the bottom right corner
 - Hit Go Live and it will open in default browser. 
 - Best works in Chrome (for development)
-
-
-#dummy 2

@@ -2,6 +2,8 @@
 const navigationConfig = {
     mainNav: [
         { title: 'Home', path: 'index.html', available: true },
+        { title: 'About', path: 'about.html', available: true },
+
         {
             title: 'Products',
             path: 'products.html',
@@ -24,7 +26,6 @@ const navigationConfig = {
                 { title: 'Cybersecurity Solutions', path: '#', available: false }
             ]
         },
-        { title: 'About', path: 'about.html', available: true },
         { title: 'Careers', path: 'careers.html', available: true },
         { title: 'Contact', path: 'contact.html', available: true, class: 'cta' }
     ]

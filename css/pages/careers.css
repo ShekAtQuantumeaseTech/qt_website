@@ -370,17 +370,17 @@
 }
 
 .careers-cta h2 {
-  font-size: clamp(2rem, 2vw + 1rem, 3rem);
+  font-size: clamp(2rem, 2vw + 1rem, 2.5rem);
   margin-bottom: 16px;
 }
 
 .careers-cta p {
-  color: rgba(7, 16, 36, 0.9);
+  color: white;
   margin-bottom: 24px;
 }
 
 .careers-cta a {
-  color: #031227;
+  color: white;
 }
 
 /* Responsive Tweaks */
@@ -436,3 +436,11 @@
     width: 100%;
   }
 }
+
+/* a.career-link {
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+} */
