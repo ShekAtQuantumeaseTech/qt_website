@@ -79,7 +79,9 @@
 }
 
 .service-card {
-    background: var(--bg-darker);
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    /* background: var(--bg-darker); */
     border-radius: 15px;
     padding: 2rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
